@@ -1,0 +1,84 @@
+*{
+	padding: 0px;
+}
+
+body{
+	background-color: blue;
+}
+.container{
+	display: grid;
+  	grid-template-columns: 20px repeat(9, 1fr) 20px;
+/*  	grid-auto-row: 200px;
+*/ 
+ 	background-color: darkgray;
+  	padding: 10px;
+  	margin: auto;
+
+}
+.nav {
+	background-color: yellow;
+	list-style-type: none;
+	text-align: center;
+	margin:0;
+	padding: 0;
+
+}
+
+.nav li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 40px;
+}
+
+.header-title{
+	display: grid;
+	justify-content: center;
+	padding: 5%;
+	outline-style: solid;
+	outline-color: black;
+	background-color: salmon;
+}
+
+.mission-statement{
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	justify-content: center;
+	text-align: center;
+	
+	width: 800px;
+	margin: auto;
+	padding: 70px 0;
+/*	padding: 100px;
+*/	outline-style: solid;
+	outline-color: black;
+	background-color: brown;
+}
+
+.testimonials{
+	display: grid;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	justify-content: center;
+	width: 800px;
+	margin: auto;
+	padding: 70px 0;
+	text-align: center;
+	outline-style: solid;
+	outline-color: black;
+	background-color: brown;
+}
+.insuredimg{
+	display: grid;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	justify-content: center;
+	width: 800px;
+	margin: auto;
+	padding: 70px 0;
+	text-align: center;
+	outline-style: solid;
+	outline-color: black;
+	background-color: brown;
+}
+
