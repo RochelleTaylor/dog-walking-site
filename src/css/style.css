@@ -65,11 +65,12 @@ body{
 }
 
 #catimg{
-	
+
     border-radius:50%;
 }
+
 #dogimg{
-	
+
 	border-radius: 50%;
 
 }
@@ -102,6 +103,50 @@ body{
 
 }
 .text{
-	display: flex;
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	justify-content: center;
 	text-align: center;
+	width: 800px;
+	margin: auto;
+	padding: 70px 0;
 }
+
+#myImage{
+    width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+.by-the-water{
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	margin: auto;
+	padding: 100px 0;
+
+}
+#aboutmephoto{
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	justify-content: center;
+	height: 200px;
+}
+.aboutmetext{
+	display: grid;
+	border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    text-align: right;
+    grid-row-start: 2;
+}
+footer{
+	display: grid;
+	grid-row-start: 3;
+	justify-content: center;
+}
+
