@@ -9,13 +9,6 @@
 body{
 }
 
-.container{
-	display: grid;
-  	grid-template-columns: 20px repeat(9, 1fr) 20px;
-  	padding: 10px;
-  	margin: auto;
-
-}
 .nav {
 	list-style-type: none;
 	text-align: center;
@@ -64,54 +57,6 @@ body{
 	justify-content: center;
 }
 
-#catimg{
-
-    border-radius:50%;
-}
-
-#dogimg{
-
-	border-radius: 50%;
-
-}
-/*.service-rates{
-	position: relative;
-	text-align: center;
-}*/
-/*.text{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.textimg2{
-	position: absolute;
-	top: 50%;
-	right: 50%
-	transform: translate(50%, 50%);
-}*/
-/*.centered{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-}*/
-.service-rates{
-	text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 15%;
-
-}
-.text{
-	display: grid;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	justify-content: center;
-	text-align: center;
-	width: 800px;
-	margin: auto;
-	padding: 70px 0;
-}
 
 #myImage{
     width: 100%;
@@ -121,6 +66,9 @@ body{
 }
 .by-the-water{
 	display: grid;
+	grid-column: 1fr 1fr;
+	grid-row-start: 3fr 3fr 3fr;
+	grid-row-end:;
 	grid-row-start: 2;
 	grid-row-end: 3;
 	margin: auto;
@@ -134,19 +82,55 @@ body{
 	justify-content: center;
 	height: 200px;
 }
-.aboutmetext{
+.maincontentcontainer{
 	display: grid;
+	grid-template-columns: 100% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+/*	grid-row-start: 3fr;
+*/	border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.logo{
+	display: grid;
+	/*grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;*/
+	grid-row-start: 3fr;
 	border: 1px solid black;
     background-color: lightblue;
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
-    text-align: right;
-    grid-row-start: 2;
+    text-align: left;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
-footer{
+.service-locations{
 	display: grid;
-	grid-row-start: 3;
 	justify-content: center;
 }
-
+.service-rates-container{
+	display: grid;
+	grid-template-columns: 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+	justify-content: space-evenly;
+	border: 1px solid black;
+    background-color: lightblue;
+}
+.dog-cat-rates{
+	display: grid;
+	grid-column-start: 1;
+}
+.dog-walking-rates{
+	display: grid;
+	grid-column-start: 2;
+}
+.waste-removal-rates{
+	display: grid;
+	grid-column-start: 3;
+}
